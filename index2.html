@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <!-- head start-->
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+        <title>Engelsiz ve Fit</title>
+        <link rel="stylesheet" href="styles/style2.css">
+        <link rel="icon" href="images/salon_siyah_beyaz.ico" type="image/x-icon">
+    </head>
+    <!-- head end-->
+    <body>
+
+<body>
+    <header class = 'header'>
+    <a href="#" class ='logo'> 
+        <img src="images/logo_son.png" alt="logo">
+    </a>
+    <nav class="navbar">
+        <a href="index.html#anasayfa" class="active">Ana Sayfa</a>
+        <a href="index.html#fitness">Fitness Nedir?</a>
+        <a href="index.html#beslenme">Beslenme Rehberi</a>
+        <a href="index.html#Supplement">Supplement Rehberi</a>
+        <a href="index.html#Kalori">Kalori Rehberi</a>
+      </nav>
+      
+    <div class="buttons">
+        
+        <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i> <!-- burger buton -->
+        </button>
+    </div>
+    
+    </header>
+    <!--*PROFİL START-->
+<section class="profile">
+    <div class="box-container">
+        <div class="box">
+            <div class="profile-knowns">
+                <h1 id="welcome">Hoş geldin!</h1>
+                <h3><span id="kullaniciAdi">Kullanıcı</span></h3>
+				<div id="kaloriSonucu" style="margin-top: 15px; font-weight: bold;"></div>
+
+				<div id="userInfo"></div>
+                
+               <!-- Düzenle butonu ve modal kutusu -->
+<button class="edit-button" onclick="openEditModal()">Bilgileri Düzenle</button>
+
+<div id="editModal" style="display: none; margin-top: 10px;">
+    <input class="duzenle" type="text" id="newUsername" placeholder="Yeni kullanıcı adını gir">
+    
+    <input class="duzenle" type="number" id="newBoy" placeholder="Boy (cm)">
+    
+    <input class="duzenle" type="number" id="newKilo" placeholder="Kilo (kg)">
+    
+    <input class="duzenle" type="number" id="newYas" placeholder="Yaş">
+    
+    <button class="edit-button" onclick="updateUserInfo()">Kaydet</button>
+</div>
+<!-- Düzenle butonu end -->
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--*PROFİL END-->
+
+
+
+    
+     <!--! vizyon start-->
+    <section class="vizyon">            
+            <h1 class="vizyon">Sakatlık veya engel seçiniz</h1>
+            <div class="buttons">
+                <button type="submit" id="gögüs" class="btn2 active">
+                    Göğüs Bölgesi
+                </button>
+                <button type="submit" id="omuz" class="btn2 active">
+                    Omuz Bölgesi
+                </button>
+                <button type="submit" id="solkol" class="btn2 active">
+                    Kol Bölgesi
+                </button>    
+            </div>    
+            <div class="buttons">
+                <button type="submit" id="karin" class="btn2 active">
+                    Karın Bölgesi
+                </button>
+                <button type="submit" id="sirt" class="btn2 active">
+                    Sırt Bölgesi
+                </button>  
+                <button type="submit" id="solbacak" class="btn2 active">                        
+                    Bacak Bölgesi
+                </button>        
+            </div>   
+            <div class="buttons">
+                <button type="submit" id="kassinir-btn" class="btn2 active">
+                    Kas ve Sinir Sistemi Hastalıkları
+                </button>
+                <button type="submit" id="nörolojik-btn" class="btn2 active">
+                    Nörolojik Hastalıklar
+                </button>
+                <button type="submit" id="iskelet-btn" class="btn2 active">
+                    İskelet ve Bağ Dokusu Hastalıkları
+                </button>
+            </div>
+    </section>
+    <section class="vizyon">
+
+        <h2 class="vizyon">Antrenman Programı</h2> 
+
+        <div class="box-container">
+            <div class="Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Bike.gif" alt="hareket1">
+                        <h3>Bisiklet</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Kol">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/dips.gif" alt="hareket2">
+                        <h3>Dips</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Kol Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/dumbbell-rdl.gif" alt="hareket3">
+                        <h3>Dumbell Romanian Deadlift</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Kol Gogus">
+                    <div class="box">
+                        <div class="box-head">
+                            <img src="images/meia-prancha.gif" alt="hareket4">
+                            <h3>Elbow Plank</h3>
+                        </div>
+                
+                    </div>
+            </div>
+            <div class="Sirt">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/lat-pulldown2.gif" alt="hareket5">
+                        <h3>Lat Pulldown</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Omuz">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/shoulder-press.gif" alt="hareket6">
+                        <h3>Shoulder Press</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Warrior-2-Pose.gif" alt="hareket7">
+                        <h3>Warrior Pose</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Gogus">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/cable-crossover.gif" alt="hareket8">
+                        <h3>Cable Crossover</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Karin Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Tiger-Yoga-Pose.gif" alt="hareket9">
+                        <h3>Tiger Yoga Pose</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Sirt">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Seated-Cable-Row.gif" alt="hareket10">
+                        <h3>Seated Cable Row</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Bacak Kol">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/dumbell-jump-squat.gif" alt="hareket11">
+                        <h3>Dumbell Jump Squat</h3>
+                     </div>
+                
+                </div>
+            </div>
+            <div class="Bacak Kol">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Elliptical-Machine.gif" alt="hareket12">
+                        <h3>Eliptik Makine</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Kol">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/Seated-Zottman-Curl.gif" alt="hareket13">
+                        <h3>Seated Zottman Curl</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/bulgarian-split-squat.gif" alt="hareket14">
+                        <h3>Bulgarian Split Squat</h3>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="Bacak">
+                <div class="box">
+                    <div class="box-head">
+                        <img src="images/dumbbell-cossack-squat.gif" alt="hareket15">
+                        <h3>Dumbell Cossack Squat</h3>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bilgi-kutusu" id="kassinir">
+        <h2>Kas ve Sinir Sistemi Hastalıkları</h2>
+        <p>Kas erimesi, sinir hasarları, periferik nöropati gibi durumlarda düşük dirençli, esneme ve dengeye dayalı egzersizler tercih edilmelidir.</p>
+    </div>
+    <div class="bilgi-kutusu" id="nörolojik">
+        <h2>Nörolojik Hastalıklar</h2>
+        <p>Parkinson, MS gibi nörolojik hastalıklarda denge, koordinasyon ve kontrollü hareketler içeren programlar uygulanmalıdır.</p>
+    </div>
+    <div class="bilgi-kutusu" id="iskelet">
+        <h2>İskelet ve Bağ Dokusu Hastalıkları</h2>
+        <p>Eklem problemleri, romatizmal rahatsızlıklar gibi durumlarda düşük ağırlıkla, kontrollü ve ekleme baskı yapmayan egzersizler önerilir.</p>
+    </div>
+    <!--!vizyon end-->
+
+        <!-- sayfa bilgileri start-->
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook" data-link="https://facebook.com"></a>
+                <a href="#" class="fa-brands fa-square-x-twitter" data-link="https://x.com"></a>
+                <a href="#" class="fab fa-instagram"data-link="https://instagram.com"></a>
+                <a href="#" class="fab fa-linkedin" data-link="https://linkedin.com"></a>
+                
+                
+                <!--! mail ve telefon  numarası ekle-->
+                <div class="contact-info">
+                    <p><a class="fas fa-phone"></a> 
+                        <a href="tel:+905533744060">+90 553 374 40 60</a>
+                        <a href="tel:+905071324799">+90 507 132 47 99</a>
+                    </p>
+                    <p><a class="fas fa-envelope"></a> 
+                        <a href="mailto:info@engelsizvefit.com">info@engelsizvefit.com</a>
+                        <a href="mailto:info@engelsizvefit.com">info@engelsizvefit.com</a>
+
+                    </p>
+                </div>
+            </div>
+           
+            <div class="credit">
+                <span>Sami Baş</span> ve <span>Berke Pektaş</span> tarafından oluşturuldu. <span>|</span> Tüm hakları saklıdır.
+            </div>
+        </section>
+    <!-- sayfa bilgileri end-->
+    
+    <div id="welcomeMessage" style="margin: 20px; font-size: 20px; font-weight: bold;"></div>
+</body>
+    <script src="scripts/script2.js"></script>
+		
+		</html>

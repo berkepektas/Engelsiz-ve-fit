@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <!-- head start-->
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Engelsiz ve Fit" />
+		<meta name="google-site-verification" content="VAKgrnmGlyZyBauIIGSzT3YblaookvWmiNMYB1OggPE" />
+    	<meta property="og:description" content="Engellilere özel fitness rehberi" />
+		<meta property="og:image" content="https://engelsizvefit.info/images/logo_son.png" />
+		<meta property="og:url" content="https://engelsizvefit.info" />
+		<meta property="og:type" content="website" />
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+        <title>Engelsiz ve Fit</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="images/salon_siyah_beyaz.ico" type="image/x-icon">
+		<script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Engelsiz ve Fit",
+        "url": "https://engelsizvefit.info",
+        "logo": "https://engelsizvefit.info/images/logo_son.png"
+        }
+        </script>
+
+    </head>
+    <!-- head end-->
+    <body>
+        <!--! kısayol start-->
+        <header class = 'header'>
+            <a href="#" class ='logo'> 
+                <img src="images/logo_son.png" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="#" class="active">Ana Sayfa</a>
+                <a href="#fitness" class="btn3" data-target="fitness">Fitness Nedir?</a>
+                <a href="#beslenme"class="btn3" data-target="beslenme">Beslenme Rehberi</a>
+                <a href="#Supplement"class="btn3" data-target="Supplement">Supplement Rehberi</a>
+                <a href="#kalori"class="btn3" data-target="Kalori">Kalori Rehberi</a>
+            </nav>
+            <div class="buttons">
+                
+                <button id="giris-btn">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> <!-- giris buton -->
+                </button>
+                <button id="menu-btn">
+                    <i class="fa-solid fa-bars"></i> <!-- burger buton -->
+                </button>
+                
+            </div>
+            <!--Giriş ekranı-->
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <!--Giriş Yap Formu-->
+                    <form class="giris-form" id="giris-form">
+                        <h3>Giriş Yap</h3>
+                        <input type="text" id="GirisAdi" placeholder="Kullanıcı Adı" class="input" required>
+                        <input type="password" id="GirisSifresi" placeholder="Şifre" class="input" required>
+                        <button type="submit" id="girisyap" class="btn">Giriş yap</button>
+                        <p id="kayit-form-getir">Hesabın yok mu? <a href="javascript:void(0)" id="giris-link">Kayıt Ol</a></p>
+                    </form>
+            
+                    <!--Üye Ol Formu-->
+                    <form class="kayit-form" id="kayit-form" style="display: none;">
+                        <h3>Kayıt ol</h3>
+                        <input type="text" id="KayitAdi" placeholder="Kullanıcı Adı" class="input" required>
+                        <input type="password" id="KayitSifresi" placeholder="Şifre" class="input" required>
+                        <input type="number" id="KayitYas" min="0" placeholder="Yaşınız" class="input" required>
+                        <input type="number" id="KayitBoy" min="0" placeholder="Boy" class="input" required>
+                        <input type="number" id="KayitKilo" min="0" placeholder="Kütleniz(kg)" class="input" required>
+                        <div class="cinsiyet-container">
+                            <label class="cinsiyet-sec">
+                              <input type="radio" id="ErkekCins" name="cinsiyet" value="erkek" required checked>
+                              Erkek
+                            </label>
+                            <label class="cinsiyet-sec">
+                              <input type="radio" id="KadinCins" name="cinsiyet" value="kadın">
+                              Kadın
+                            </label>
+                        </div>
+                            <button type="submit" id="uyeol" class="btn">Üye Ol</button>
+                            <p id="giris-form-getir">Zaten hesabın var mı?<a href="javascript:void(0)" id="kayit-link">Giriş Yap</a></p>  
+                    </form>
+                </div>
+            </div>
+            <!-- Giriş end-->
+             
+        </header>
+        <!--! kısayol end-->
+        <!-- ilk görünüm start-->
+            <section class="home">
+                <div class="content">
+                    <h3>Güne sağlıklı bir merhaba demek gerek </h3>
+                    <p><b>Güne sağlıklı bir merhaba demek için Engelsiz ve Fit ile sende sağlıklı ve fit olabilirsin...</b></p>
+
+                </div>
+            </section>
+        <!-- ilk görünüm end-->
+        <!--! vizyon start-->
+            <section class="vizyon" id="scrollable">
+                <h1 class="vizyon">VİZYONUMUZ</h1>
+                <div class="box-container">
+                    <div class="box">
+                        <div class="box-head">
+                            <img src="images/vizyon_1.jpeg" alt="vizyon1">
+                            <h3>Her Beden İçin Erişilebilir Fitness</h3>
+                            <p class="vizyon-kategori">Herkesin sağlıklı yaşam hakkına sahip olduğuna inanıyoruz. Fiziksel engeli olan bireylerin spor yapma imkanlarını artırmak ve erişilebilirliği teknolojiyle desteklemek için buradayız. Egzersiz artık sadece belli gruplar için değil her bedenin ihtiyacına özel çözümlerle herkese açık.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-head">
+                            <img src="images/vizyon_2.jpeg" alt="vizyon2">
+                            <h3>Kapsayıcı ve Destekleyici Bir Topluluk</h3>
+                            <p class="vizyon-kategori">Yalnız değiliz. Engelli bireylerin motivasyonlarını yüksek tutabilecekleri, birlikte öğrenip gelişebilecekleri bir topluluk oluşturmayı hedefliyoruz. Burada sadece antrenman değil, dayanışma ve güçlenme var.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-head">
+                            <img src="images/vizyon_3.jpg" alt="vizyon3">
+                            <h3>Engelleri Değil Potansiyeli Görüyoruz</h3>
+                            <p class="vizyon-kategori">Geleneksel fitness anlayışı sınırlar koyar. Biz bu sınırları kaldırıyor, bireylerin potansiyellerine odaklanıyoruz. Her kullanıcıya özel egzersiz planlarıyla, fiziksel farklılıkların önünde değil, yanında duran bir dijital rehber olmayı amaçlıyoruz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--! vizyon end-->
+        <!-- Hakkında start-->
+        
+        <section class="about">
+            <h1 class="vizyon">SİTEMİZ HAKKINDA</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="images/tpose_man.png" alt="Hakkımızda_Resim">
+                </div>
+                <div class="content">
+                    <h3>Sitemiz hakkında ne biliyorsunuz?</h3>
+                    <p>Bu site, engelli bireyler ve fiziksel sakatlık yaşamış kişiler için özel olarak tasarlanmıştır. Amacımız, spor yaparken sorunlu bölgeleri zorlamadan sağlıklı kalmalarını desteklemektir.</p>
+                    <p>Kullanıcılar, ihtiyaçlarına göre uyarlanmış egzersiz programlarına kolayca erişebilir. Hedefimiz herkesin güvenli ve kontrollü bir şekilde hareket edebilmesini sağlamaktır.</p>
+                    <p>Site, erişilebilirlik ve kullanım kolaylığı ön planda tutularak hazırlanmıştır. Her bireyin aktif bir yaşam sürebilmesi için yol gösterici bir kaynak olmayı amaçlıyoruz.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hakkında end-->
+        <!-- Kullanıcı start-->
+        <section class="review">
+            <h1 class="vizyon">KULLANICI YORUMLARI</h1>
+            <form id="yorum-formu" style="margin-bottom: 20px;">
+                <textarea class="yorumInput" id="yorumMetni" placeholder="Yorumunuzu yazın..." rows="3" ></textarea><br>
+                <div class="yorumCift">
+                    <input class="yorumIsim" type="text" id="yorumYapan" placeholder="Adınız (isteğe bağlı)">
+                    <button class="yorumYap" onclick="yorumEkle()" style="margin-top: 10px; padding: 10px 20px;">Yorum Yap</button>
+                </div>
+            </form>
+    
+    <div class="box-container" id="yorumlarKutusu">
+            <div class="box-container">
+                <div class="box">
+                    <p>Bu siteyi keşfetmek benim için büyük bir motivasyon kaynağı oldu. İlk defa benim fiziksel durumuma uygun egzersizleri bir arada ve açıklayıcı bir şekilde bulabildim. Hareketlerin videolu anlatımı da çok yardımcı oluyor. Ancak bazı egzersizlerde kullanılan ekipmanlar herkesin evinde olmayabilir, bu konuda alternatifler sunulsa harika olur.
+                    </p>
+                    <h3>Kübra</h3>
+                    
+                </div>
+                <div class="box">
+                    <p>Kendi ihtiyaçlarıma özel hazırlanmış içerikler bulmak beni gerçekten mutlu etti. İlk defa bu kadar kapsayıcı bir fitness platformu görüyorum. Yine de, site içi yönlendirmelerde zaman zaman karışıklık yaşıyorum, özellikle de aradığım egzersizi bulmak bazen zor olabiliyor. Daha sade bir menü sistemi iyi olurdu.
+                    </p>
+                    
+                    <h3>Dilara</h3>
+                    </div>
+                <div class="box">
+                    <p>Egzersizlerin açıklamaları net, videolar anlaşılır. Uzun zamandır spordan uzak kalmıştım ama bu site sayesinde tekrar motive oldum. Özellikle moral açısından çok şey kattı. Keşke bir de haftalık program önerileri eklenmiş olsa, hangi gün ne yapmalıyım biraz kararsız kalıyorum.
+                    </p>
+                    <h3>Akın</h3>
+
+                    
+                </div>
+                <div class="box">
+                    <p>Sitede engel durumuma göre filtreleme yapabilmek benim için büyük kolaylık sağladı. Daha önce hiçbir yerde bu kadar detaylı ve bana özel egzersiz içeriklerine ulaşamamıştım. Ancak bazı hareketlerin zorluk seviyesi belirtilmemiş, yeni başlayanlar için hangi seviyeden başlanmalı konusunda biraz daha açıklayıcı bilgiler eklenirse daha faydalı olur.</p>
+                    
+                    <h3>Cengizhan</h3>
+
+                    </div>
+                
+            </div>
+        </section>
+        <!-- Kullanıcı end-->
+        <!--! Blog start-->
+            <section class="blog">
+                <h1 class="vizyon">BUNLARIDA OKUMALISIN</h1>
+                <div class="box-container">
+                    <div class="box" id="fitness">
+                        <div class="image">
+                        <img src="images/fitness_nedir.jpeg" alt="Blog1">
+                        </div>
+                        <div class="content fitness">
+                            <a href="#" class="title"> Fitness Nedir?</a>
+                            <span>Admin Tarafından | 25 Nisan 2025 </span>
+                            <p>
+                                Fitness denince aklımıza insanların sağlıklı ve formda olmak için yaptığı egzersizler, sağlıklı...
+                            </p>
+                            <button class="btn" data-target="fitness">Daha Fazla Öğren</button>
+                        </div>
+                    </div>
+
+                    <div class="box" id="beslenme">
+                        <div class="image">
+                        <img src="images/beslenme_rehberi.jpg" alt="Blog2">
+                        </div>
+                        <div class="content beslenme">
+                            <a href="#" class="title"> Beslenme Rehberi</a>
+                            <span>Admin Tarafından | 12 Ağustos 2025 </span>
+                            <p>
+                                Sporcu beslenmesi veya diyet söz konusu olduğunda her kafadan bir ses çıkıyor...
+                            </p>
+                            <button class="btn" data-target="beslenme">Daha Fazla Öğren</button>                     
+                        </div>
+                    </div>
+
+                    <div class="box" id="Supplement">
+                        <div class="image">
+                            <img src="images/supplement_rehberi.jpg" alt="Blog3">
+                        </div>
+                        <div class="content Supplement">
+                            <a href="#" class="title"> Supplement Rehberi</a>
+                            <span>Admin Tarafından | 2 Şubat 2025 </span>
+                            <p>
+                                Bunlara takviye deniyor çünkü tek başına hayatta kalmanız için gereken tüm vitamin...
+                            </p>
+                            <button class="btn" data-target="Supplement">Daha Fazla Öğren</button>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Kalori">
+                        <div class="image">
+                            <img src="images/kalori_hesaplama.jpeg" alt="Blog4">
+                        </div>
+                        <div class="content Kalori">
+                            <a href="#" class="title"> Kalori Rehberi</a>
+                            <span>Admin Tarafından | 21 Mart 2025 </span>
+                            <p>
+                                Yiyeceklerin kalorisi, içerdikleri temel besin öğelerinin (protein, karbonhidrat, yağ)...
+                            </p>
+                            <button class="btn" data-target="Kalori">Daha Fazla Öğren</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Bunları da okumalısın start-->
+                <div class="dahafazla">
+                    <div class="content fitness">
+                        
+                            <h1>Fitness Nedir?</h1>
+                            <p>Fitness denince aklımıza insanların sağlıklı ve formda olmak için yaptığı egzersizler, sağlıklı yaşam alışkanlıkları geliyor. Ayrıca fitness bir spor branşı, yani insanların ne kadar formda olduğunu podyumda gösterdiği, formunu geliştirmek için de spor salonlarında egzersiz makineleri veya ağırlıklarla çalıştığı bir branş.<br>
+                                Bugünlerde spor salonu, internet, TV dizileri gibi birçok yerde “fit olmak” veya “fitness” tabiri çok sık kullanılıyor. Fakat yukarıdaki tanımın ötesinde, fit olmayı estetik görünen kas yapma, düşük yağ oranı veya selülitleri olmayan bacaklardan ibaret sanmamalıyız!<br>
+                                ‘Fit olma’ tanımı aslında ilk olarak şu şekilde yapılmıştır: “Bir organizmanın çevre şartlarına uygunluk derecesi ve neslini sürdürebilmesi’’.<br>
+                                Yani bu tanıma baktığımız zaman aslında fitness yalnızca sandığımız gibi estetik kaslar, düşük yağ oranı ve güzel görünümden ibaret değildir, çok daha fazlasıdır!<br>
+                                Fitness: verilen fiziksel bir ödevi en güvenli ve etkili şekilde gerçekleştirebilme becerisi, yetenekleridir.<br>
+                                Engelsiz ve Fit'de bizim fitness hakkında net bir felsefemiz var: Bir sporcu güçlü, hızlı, dayanıklı, esnek ve çevik; kısacası atletik & estetik olmalıdır!<br>
+                                Yani kendini sadece tek bir düzeyde geliştirip, diğerlerinden mahrum kalmamalıdır! Her motorik özelliklerine odaklanmalı, farklı adaptasyonlarda da gelişmeli ve kendini en iyi şekilde eğitmelidir.<br></p>
+                        
+                    </div>
+                    <div class="content beslenme">
+                        
+                            <h1>Beslenme Nasıl Olmalıdır?</h1>
+                            <p>Yeni başlayanlar için vücut geliştirme beslenme programı nasıl olmalı?<br>
+                                Sporcu beslenmesi veya diyet söz konusu olduğunda her kafadan bir ses çıkıyor. Bir uzmanın işe yarar dediğine bir diğeri zararlı diyor…<br>
+                                Bu da yetmezmiş gibi paylaşılan diyetler her gün yapılabilecek gibi değil.<br>
+                                Peşinen söylemeliyim ki: “Sabah, öğle, akşam bunlar yenilecek” tadında basmakalıp fitness beslenme programlarını devamlı uygulamak imkansız. <br>
+                                Hiçbir sporcu diyeti bu şekilde işlemiyor! Çünkü bu tip diyetleri 3 günden fazla devam ettirecek irade ve imkan kimsede yok. Gerçek hayat kağıttaki programa benzemiyor.<br>
+                                Peki ne yapmalıyız?<br>
+                                Önemli olan diyetimizde ihtiyacımız olan kalori ve makroları organize edebilmek, matematik yanılmaz!<br>
+                                Kaloriler: Besinlerin enerji birimidir. Hepimizin vücut büyüklüğüne ve aktivite seviyesine göre ihtiyacı olan bir enerji miktarı vardır. Bunu hesaplamalı ve sporcu diyeti oluştururken kalorilere dikkat ederek beslenmemiz lazım. Hazırlayacağımız beslenme programının en önemli faktörü olduğu için piramitin tabanında yer alıyor.<br>
+                                Makrolar: Yediğimiz besinlerin yapı taşlarıdır. Karbonhidrat, protein ve yağları burada inceleyeceğiz. Bunların oranlarını, amacımıza göre ne kadar almamız gerektiğini öğrenmeli ve buna dikkat etmeliyiz.<br>
+                                Mikrolar: Yine besinlerle aldığımız fakat makrolar gibi gramla değil, genellikle miligramla veya daha küçük birimlerle ifade ettiğimiz organik ya da inorganik bileşenlerdir. Vitamin ve mineralleri, besin kalitesini ve su ihtiyacımızı anlamalı ve buna göre diyetimizi şekillendirmeliyiz.<br>
+                                Besin zamanlaması bölümünde amacımıza göre kaç öğün yememiz gerektiğini, günün saatlerine ve spordan önce ve sonra nasıl beslenmemiz gerektiğini inceleyeceğiz.<br>
+                                Son olarak supplementler ise gerek eksikleri tamamlama, gerek de performasımızı artırmak adına beslenme programını destekleyeceğimiz gıdalardır. </p>
+                        
+                    </div>
+                    <div class="content Supplement">
+                        
+                            <h1>Supplement Rehberi</h1>
+                            <p>Supplement ne demek, sporcu besinleri demek. Sporculara özel hazırlanmış gıda demek. <br>
+                                Bunlara takviye deniyor çünkü tek başına hayatta kalmanız için gereken tüm vitamin, mineral, yeterli besin bu ürünlerde yok. O yüzden öğün yerine kullanılmazlar. Supplement eksik gidermek için var. <br>
+                                Bu yüzden önce eksik olan besini anlamak önemli. <br>
+                                1-Kreatin <br>
+                                Kreatin ağırlık çalışması, sprint, güreş gibi güce dayalı spor yapanlar için enerji kullanımında rol oynar. <br>
+                                Araştırmalara göre temposu düşük, yoğunluğu yüksek sporcular için performans artıracak tek supplement kreatindir. <br>
+                                Gücünüzü doğrudan etkilediği için daha yüksek ağırlıklarla çalışmanıza yardımcı olabilir, dolaylı olarak da kas gelişimini ve kütle artışını destekler. Üzerinde en çok araştırma yapılan supplement olan kreatin, hiçbir sağlık sorununa sebep olmadığı gibi; beyin, kemik, kas ve karaciğere faydalıdır. <br>
+                                Kreatin ürünleri arasında dağlar oynamaz, fakat bir miktar kalite farkı bulunuyor. Farklı kreatin formları da bulunuyor, fakat en temel kreatin monohidrat da işimizi görebiliyor. <br>
+                                Kreatin suda kolay çözünen bir madde olmadığı için toz yerine tablet olarak da tercih edebilirsiniz, tamamen arzunuza göre. <br>
+                                2-ZMA <br>
+                                Çinko ve magnezyum… Metabolizmanın birçok faaliyetinde birinci derecede rol oynayan mineraller. Eksikliğinde ortaya çıkan sıkıntılardan birkaçı: Düşük cinsel istek, saç dökümü, tırnakta beyaz lekeler, düşük testosteron ve sivilce… <br>
+                                Ailecek supplement etmeniz gerekiyor, özellikle sporcuların eksik olduğu mineraller. Supplement ile desteklenmesi testosteronunuzu doğal olarak yükseltir (olması gerektiği yere çeker) ve uykularınızdan aldığınız verim artar. Dolaylı olarak salonda ve mutfakta yaptıklarınızın yürümesine yardımcı olur. <br>
+                                Çinko ve magnezyumu ayrı ayrı alabilirsiniz elbette. Fakat sporcular genelde bunu ZMA olarak alırlar. Dozları buna göre ayarlanmıştır ve bu şekilde daha rahat alabilirsiniz. <br>
+                                3-Omega 3 <br>
+                                Genellikle diyetimizde omega-6 oranı omega-3 oranından çok fazla. Hele bir de spor yapıp, hayvansal gıda tüketenlerde omega-3 oranı çok düşük oluyor. Bu birçok probleme kapı aralıyor. Eğer uzun dönemde sağlığınızı düşünüyorsanız, antrenmanlardan yenilenmenizi hızlandırmak istiyorsanız, omega-3 olmazsa olmaz <br>
+                                4-Probiyotik <br>
+                                200’den fazla araştırma 170’den fazla hastalığın eksik probiyotikler sebebiyle olduğunu söylüyor. Huzursuz bağırsak (IBS), zayıf bağışıklık sistemi, iltihaplanmalar, egzama, cilt problemleri, kötü nefes kokusu, ishal veya kabızlık… Bu sorunları yenmemiz için probiyotikler çok önemlidir. <br>
+                                Probiyotik aktif bakterilerdir, canlı olarak almanız lazım. Prebiyotikler ise, zaten olan bakterileri besleyen gıdalardır. Prebiyotikler ısıdan nemden etkilenmezler. İki formu da ihtiyaca karşılık verir.Bakteri sayısı, iyi bir probiyotik supplement için önemli bir gösterge, fakat bakteri çeşitliliği, miktardan daha önemli. <br>
+                                Özellikle lactobacillus rhamnosus ve lactobacillus acidophilus önemli bakterilerin başında geliyor. Bu üründe bunları içeren zengin bir karışım, bu yüzden rahatça önerebiliriz. <br>
+                                5-Protein Tozu <br>
+                                Protein tozu kimileri için listenin en başında da olabilir. Günlük protein ihtiyacınızı karşılayamıyorsanız, diyetinizle bunu yapmanız mümkün değilse, pratik yöntem olan whey protein kas geliştirmek için olmazsa olmaz! Kas gelişimi için protein şart, söyleyecek çok bir şey yok. <br>
+                                Protein tozuna en büyük ihtiyaç, diyet yapılan dönemde oluyor. Çünkü yüksek kalori alırken proteini almak hem kolaydır, hem de vücudumuz zaten katabolik değildir. Fakat kilo vermeye çalışırken düşük kalorili bir beslenme içinde takviye almanız muhtemelen gerekecek, ya da çok faydalı olacaktır. <br></p>
+                        
+                    </div>
+                    <div class="content Kalori">
+                        
+                            <h1>Kalori Rehberi</h1>
+                            <p>Yiyeceklerin Kalorisi Nasıl Hesaplanır? <br>
+                                Yiyeceklerin kalorisi, içerdikleri temel besin öğelerinin (protein, karbonhidrat, yağ) vücuda sağladığı enerji miktarına göre hesaplanır. Besinlerin enerji değerlerini belirlemek için kullanılan temel hesaplama yöntemi şu şekildedir: <br>
+                                Protein ve Karbonhidratlar: 1 gramı 4 kalori enerji sağlar. <br>
+                                Yağlar: 1 gramı 9 kalori enerji sağlar. <br>
+                                Alkol: 1 gramı 7 kalori enerji sağlar (eğer besinde mevcut ise). <br>
+                                Bu bilgiler ışığında tükettiğiniz bir yiyeceğin toplam kalorisi, içeriğindeki besin maddelerinin gram cinsinden miktarlarına göre hesaplanır. Örneğin; 100 gramlık bir yiyecek 10 gram protein, 5 gram yağ ve 20 gram karbonhidrat içeriyorsa toplam kalori şu şekilde bulunur: <br>
+                                Protein: 10 gram × 4 =40 kalori <br>
+                                Yağ: 5 gram × 9 = 45 kalori <br>
+                                Karbonhidrat: 20 gram × 4 = 80 kalori <br>
+                                Toplam Kalori: 165 kalori <br>
+                                Ambalajlı ürünlerde bu hesaplama genellikle hazır olarak sunulur. Ancak taze meyve, sebze veya evde hazırlanan yemeklerin kalorisini hesaplamak için bu yöntemi kullanabilirsiniz. <br>
+                                Yiyeceklerin Besin Değerleri ve Dengeli Beslenme <br>
+                                Sağlıklı beslenme sadece kalori hesabı yapmak değil, besinlerin içerdiği değerli bileşenleri de dikkate almak demektir. Her besinin vücudumuza farklı katkıları vardır ve dengeli beslenme için bu besin değerlerinin tamamını almak önemlidir. <br>
+                                Temel Besin Değerleri ve İşlevleri: <br>
+                                Protein – Yapı Taşlarımız <br>
+                                -Kas gelişimi ve onarımında temel rol oynar. <br>
+                                -Metabolizmayı hızlandırır ve uzun süre tok tutar. <br>
+                                -Et, balık, yumurta, süt ürünleri ve baklagillerde bulunur. <br>
+                                -Karbonhidrat – Enerji Kaynağımız <br>
+                                -Vücudun temel yakıt kaynağıdır. <br> 
+                                -Tam tahıllar ve baklagiller kan şekerini dengeler. <br>
+                                -Beyin fonksiyonları için gereklidir. <br>
+                                Yağ – Yaşamsal Fonksiyonlar <br>
+                                -Hücre yapısını korur ve enerji depolar. <br>
+                                -Zeytinyağı ve avokado gibi sağlıklı yağlar kalp dostu. <br>
+                                -Hormon üretimi için gereklidir. <br>
+                                -Lif – Sindirim Sisteminin Dostu <br>
+                                -Bağırsak sağlığını destekler. <br>
+                                -Tokluk hissi verir. <br>
+                                -Kan şekeri dengesine yardımcı olur. <br>
+                                Vitamin ve Mineraller – Koruyucu Kalkan <br>
+                                -Metabolizma ve bağışıklık sistemini güçlendirir. <br>
+                                -Kemik ve diş sağlığını korur. <br>
+                                -Enerji üretiminde görev alır. <br>
+                                Spor ve Kalori Hesaplama <br>
+                                Fiziksel aktivite, kalori hesabını etkileyen en önemli faktörlerden biridir. Günlük kalori ihtiyacı hesaplama ile spor sırasında harcadığınız enerjiye uygun günlük enerji miktarınızı kolayca belirleyebilirsiniz. Kalori ihtiyacınızı hesaplarken şu faktörleri göz önünde bulundurabilirsiniz: <br>
+                                Bazal Metabolizma Hızı (BMR): <br>
+                                Vücudun istirahat halindeyken harcadığı minimum enerji miktarıdır. BMR hesaplama aracı ile bazal metabolizma hızınızı öğrenebilirsiniz. <br>
+                                Aktivite Seviyesi: <br>
+                                Günlük hareket düzeyinize göre harcanan ekstra kaloriler. <br>
+                                Egzersiz Yoğunluğu: <br>
+                                Yüksek yoğunluklu egzersizler, daha fazla enerji yakmanızı sağlar. <br>
+                                Özetle; <br>
+                                Besin kalorileri hesaplama, sağlıklı yaşam ve dengeli beslenme için kritik bir araçtır. Kalori ve besin değerlerini bilmek; kilo yönetimi, enerji dengesi ve sağlık risklerini azaltmada etkili olur. Spor ve günlük aktivitelerle uyumlu bir beslenme planı için doğru hesaplama ve bilinçli tercihler yapmanız önemlidir. <br></p> 
+                        
+                    </div>
+                </div>
+             <!--Bunları da okumalısın end-->
+            </section>
+        <!--! Blog end-->
+        <!-- sayfa bilgileri start-->
+            <section class="footer">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook" data-link="https://facebook.com"></a>
+                    <a href="#" class="fa-brands fa-square-x-twitter" data-link="https://x.com"></a>
+                    <a href="#" class="fab fa-instagram"data-link="https://instagram.com"></a>
+                    <a href="#" class="fab fa-linkedin" data-link="https://linkedin.com"></a>
+                    
+                    
+                  <!--! mail ve telefon  numarası ekle-->
+                  <div class="contact-info">
+                  <p> <a class="fas fa-phone"></a> 
+                 <a href="tel:+905533744060" data-link="https://+905533744060">+90 553 374 40 60</a>                                                          <a href="tel:+905071324799" data-link="https://+905071324799">+90 507 132 47 99</a>
+                 </p>    
+                <p> <a class="fas fa-envelope"></a> 
+                <a href="mailto:berkepektas@engelsizvefit.info" 
+				   data-link="https://berkepektas@engelsizvefit.info">berkepektas@engelsizvefit.info</a>                 
+					<a href="mailto:samibas@engelsizvefit.info" 
+					data-link="https://samibas@engelsizvefit.info">samibas@engelsizvefit.info</a>
+
+                </p>
+                    </div>
+                </div>
+               
+                <div class="credit">
+                    <span>Sami Baş</span> ve <span>Berke Pektaş</span> tarafından oluşturuldu. <span>|</span> Tüm hakları saklıdır.
+                </div>
+            </section>
+        <!-- sayfa bilgileri end-->
+        <script src="scripts/script.js"></script>
+		<script src="scripts/login.js" defer></script>
+</body>
+    
+</html>
