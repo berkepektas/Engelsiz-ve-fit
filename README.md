@@ -1,5 +1,5 @@
 # EngelsizVeFit
-
+🌐 **Canlı Site:** https://engelsizvefit.info/
 **EngelsizVeFit**, engelli veya fiziksel kısıtlamaları olan kullanıcılar için geliştirilmiş bir **kişiselleştirilmiş egzersiz platformudur**.  
 Amaç, kullanıcıların sağlık durumlarına uygun egzersizleri güvenle yapabilmelerini sağlamak ve fiziksel aktivitelerini desteklemektir.
 
